@@ -19,6 +19,7 @@ namespace Forms {
 
         #region Windows Form Designer generated code
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.directorText = new Forms.TextBoxBorder();
@@ -45,6 +46,8 @@ namespace Forms {
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.plotText = new Forms.TextBoxBorder();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -53,6 +56,7 @@ namespace Forms {
             this.flowLayoutPanel6.SuspendLayout();
             this.flowLayoutPanel8.SuspendLayout();
             this.actors.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -91,6 +95,7 @@ namespace Forms {
             this.directorText.Size = new System.Drawing.Size(215, 22);
             this.directorText.TabIndex = 1;
             this.directorText.text = "";
+            this.directorText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // flowLayoutPanel2
             // 
@@ -99,7 +104,7 @@ namespace Forms {
             this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel4);
             this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel5);
             this.flowLayoutPanel2.Controls.Add(this.flowLayoutPanel6);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(12, 53);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(287, 157);
             this.flowLayoutPanel2.TabIndex = 1;
@@ -140,6 +145,7 @@ namespace Forms {
             this.titleText.Size = new System.Drawing.Size(232, 22);
             this.titleText.TabIndex = 1;
             this.titleText.text = "Text";
+            this.titleText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // flowLayoutPanel4
             // 
@@ -177,6 +183,7 @@ namespace Forms {
             this.genreText.Size = new System.Drawing.Size(223, 22);
             this.genreText.TabIndex = 1;
             this.genreText.text = "";
+            this.genreText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // flowLayoutPanel5
             // 
@@ -214,6 +221,7 @@ namespace Forms {
             this.durationText.Size = new System.Drawing.Size(212, 22);
             this.durationText.TabIndex = 1;
             this.durationText.text = "";
+            this.durationText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.durationText._TextChanged += new System.EventHandler(this.validateDuration);
             // 
             // flowLayoutPanel6
@@ -252,12 +260,13 @@ namespace Forms {
             this.ratingText.Size = new System.Drawing.Size(221, 22);
             this.ratingText.TabIndex = 1;
             this.ratingText.text = "";
+            this.ratingText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ratingText._TextChanged += new System.EventHandler(this.validateRating);
             // 
             // label6
             // 
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(18, 175);
+            this.label6.Location = new System.Drawing.Point(18, 216);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 0;
@@ -268,7 +277,7 @@ namespace Forms {
             // 
             this.flowLayoutPanel8.Controls.Add(this.label7);
             this.flowLayoutPanel8.Controls.Add(this.releaseDate);
-            this.flowLayoutPanel8.Location = new System.Drawing.Point(341, 12);
+            this.flowLayoutPanel8.Location = new System.Drawing.Point(341, 53);
             this.flowLayoutPanel8.Name = "flowLayoutPanel8";
             this.flowLayoutPanel8.Size = new System.Drawing.Size(237, 28);
             this.flowLayoutPanel8.TabIndex = 3;
@@ -297,7 +306,7 @@ namespace Forms {
             // 
             this.actors.AutoScroll = true;
             this.actors.Controls.Add(this.acto);
-            this.actors.Location = new System.Drawing.Point(341, 86);
+            this.actors.Location = new System.Drawing.Point(341, 127);
             this.actors.Name = "actors";
             this.actors.Size = new System.Drawing.Size(237, 204);
             this.actors.TabIndex = 4;
@@ -316,6 +325,7 @@ namespace Forms {
             this.acto.Size = new System.Drawing.Size(237, 22);
             this.acto.TabIndex = 0;
             this.acto.text = "";
+            this.acto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // button1
             // 
@@ -323,7 +333,7 @@ namespace Forms {
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(341, 64);
+            this.button1.Location = new System.Drawing.Point(341, 105);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -337,7 +347,7 @@ namespace Forms {
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(414, 64);
+            this.button2.Location = new System.Drawing.Point(414, 105);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 5;
@@ -350,7 +360,7 @@ namespace Forms {
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(503, 313);
+            this.button3.Location = new System.Drawing.Point(503, 354);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 6;
@@ -364,7 +374,7 @@ namespace Forms {
             this.plotText.BorderSize = 1;
             this.plotText.Color = System.Drawing.Color.White;
             this.plotText.ForeColor = System.Drawing.Color.White;
-            this.plotText.Location = new System.Drawing.Point(21, 197);
+            this.plotText.Location = new System.Drawing.Point(21, 238);
             this.plotText.Margin = new System.Windows.Forms.Padding(0);
             this.plotText.Multiline = true;
             this.plotText.Name = "plotText";
@@ -372,11 +382,38 @@ namespace Forms {
             this.plotText.Size = new System.Drawing.Size(259, 93);
             this.plotText.TabIndex = 1;
             this.plotText.text = "";
+            this.plotText.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(598, 35);
+            this.panel1.TabIndex = 7;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(566, 6);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(27, 24);
+            this.button4.TabIndex = 3;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.close);
             // 
             // Form2
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(40)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(616, 357);
+            this.ClientSize = new System.Drawing.Size(598, 399);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.plotText);
@@ -385,7 +422,9 @@ namespace Forms {
             this.Controls.Add(this.button1);
             this.Controls.Add(this.flowLayoutPanel8);
             this.Controls.Add(this.flowLayoutPanel2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -399,6 +438,7 @@ namespace Forms {
             this.flowLayoutPanel6.PerformLayout();
             this.flowLayoutPanel8.ResumeLayout(false);
             this.actors.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -431,5 +471,7 @@ namespace Forms {
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private TextBoxBorder acto;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
     }
 }

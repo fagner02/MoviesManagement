@@ -18,9 +18,6 @@ namespace Forms {
 
         [DllImport("user32.dll", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void button1_Click(object sender, EventArgs e) {
-
-        }
 
         private void button4_Click(object sender, EventArgs e) {
             this.Close();
@@ -29,6 +26,10 @@ namespace Forms {
         private void move(object sender, MouseEventArgs e) {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void okClick(object sender, EventArgs e) {
+            this.Close();
         }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.csproj.GenerateResourc
 C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.csproj.CoreCompileInputs.cache
 C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.exe
 C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.pdb
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.Form3.resources

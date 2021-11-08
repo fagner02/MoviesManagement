@@ -25,26 +25,26 @@ namespace Forms {
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
-            this.button1 = new System.Windows.Forms.Button();
+            this.ok = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.textBoxBorder1 = new Forms.TextBoxBorder();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // ok
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(91, 149);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.ok.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ok.ForeColor = System.Drawing.Color.White;
+            this.ok.Location = new System.Drawing.Point(91, 149);
+            this.ok.Name = "ok";
+            this.ok.Size = new System.Drawing.Size(75, 23);
+            this.ok.TabIndex = 0;
+            this.ok.Text = "Ok";
+            this.ok.UseVisualStyleBackColor = false;
+            this.ok.Click += new System.EventHandler(this.okClick);
             // 
             // panel1
             // 
@@ -77,14 +77,15 @@ namespace Forms {
             this.textBoxBorder1.BorderSize = 1;
             this.textBoxBorder1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
             this.textBoxBorder1.ForeColor = System.Drawing.Color.White;
-            this.textBoxBorder1.Location = new System.Drawing.Point(33, 56);
+            this.textBoxBorder1.Location = new System.Drawing.Point(45, 80);
             this.textBoxBorder1.Margin = new System.Windows.Forms.Padding(0);
             this.textBoxBorder1.Multiline = true;
             this.textBoxBorder1.Name = "textBoxBorder1";
             this.textBoxBorder1.Padding = new System.Windows.Forms.Padding(5);
-            this.textBoxBorder1.Size = new System.Drawing.Size(191, 76);
+            this.textBoxBorder1.Size = new System.Drawing.Size(165, 42);
             this.textBoxBorder1.TabIndex = 2;
-            this.textBoxBorder1.text = "Title field is required.";
+            this.textBoxBorder1.text = "The title field is required to add a new movie.";
+            this.textBoxBorder1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form3
             // 
@@ -94,9 +95,10 @@ namespace Forms {
             this.ClientSize = new System.Drawing.Size(259, 217);
             this.Controls.Add(this.textBoxBorder1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ok);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form3";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -105,7 +107,7 @@ namespace Forms {
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ok;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button4;
         private TextBoxBorder textBoxBorder1;

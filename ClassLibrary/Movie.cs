@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace MovieClass {
     public class Movie {
-        public bool toAdd;
+        public bool toAdd = false;
         public string title;
         public string genre;
         public int rating;

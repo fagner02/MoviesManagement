@@ -17,8 +17,12 @@ namespace Forms {
         protected override void OnTextChanged(EventArgs e) {
             _TextChanged?.Invoke(this, e);
             //Console.WriteLine(Text);
+            
         }
 
+        
+        private bool multiline = true;
+        private HorizontalAlignment textAlign = HorizontalAlignment.Left;
         private Color color = Color.White;
         private int borderSize = 1;
         public override Color BackColor { get => base.BackColor;
@@ -42,6 +46,10 @@ namespace Forms {
         public Color Color { get => color; set { color = value; this.Invalidate(); } }
         [Browsable(true)]
         public int BorderSize { get => borderSize; set { borderSize = value; this.Invalidate(); } }
+        [Browsable(true)]
+        public bool Multiline { get => multiline; set{ multiline = value; textBox1.Multiline = value; } }
+
+        public HorizontalAlignment TextAlign { get => textAlign; set { textAlign = value; textBox1.TextAlign = value; } }
 
         public TextBoxBorder() {
             InitializeComponent();        }

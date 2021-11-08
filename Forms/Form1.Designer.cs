@@ -127,11 +127,13 @@ namespace Forms {
             this.textBoxBorder1.ForeColor = System.Drawing.Color.White;
             this.textBoxBorder1.Location = new System.Drawing.Point(236, 62);
             this.textBoxBorder1.Margin = new System.Windows.Forms.Padding(0);
+            this.textBoxBorder1.Multiline = true;
             this.textBoxBorder1.Name = "textBoxBorder1";
             this.textBoxBorder1.Padding = new System.Windows.Forms.Padding(5);
             this.textBoxBorder1.Size = new System.Drawing.Size(308, 250);
             this.textBoxBorder1.TabIndex = 5;
             this.textBoxBorder1.text = "";
+            this.textBoxBorder1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Form1
             // 
@@ -144,6 +146,7 @@ namespace Forms {
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

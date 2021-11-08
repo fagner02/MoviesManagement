@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using System.Runtime.InteropServices;
 using MovieClass;
 
 namespace Forms {
@@ -60,6 +61,11 @@ namespace Forms {
         }
 
         private void send(object sender, EventArgs e) {
+            if(titleText.text.Length == 0) {
+                Form3 msg = new Form3();
+                msg.ShowDialog();
+                return;
+            }
             response.title = titleText.Text;
             response.genre = genreText.Text;
             response.director = directorText.Text;
@@ -77,6 +83,22 @@ namespace Forms {
                     response.actors.Add(actor.Text);
                 }
             }
+
+            response.toAdd = true;
+
+            this.Close();
+        }
+        [DllImport("user32.dll", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.dll", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panel1_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void close(object sender, EventArgs e) {
             this.Close();
         }
     }

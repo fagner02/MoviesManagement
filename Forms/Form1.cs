@@ -34,6 +34,7 @@ namespace Forms {
             Movie temp = new Movie();
             Form2 form = new Form2(temp);
             form.ShowDialog();
+            if (!temp.toAdd) { return; }
             Console.WriteLine(temp.title + "title");
             textBoxBorder1.text = temp.ToString();
             movies.Add(temp);
