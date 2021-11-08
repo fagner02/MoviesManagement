@@ -1,0 +1,15 @@
+C:\Users\fagne\Downloads\Movies\Forms\bin\x86\Debug\Forms.exe.config
+C:\Users\fagne\Downloads\Movies\Forms\bin\x86\Debug\Forms.exe
+C:\Users\fagne\Downloads\Movies\Forms\bin\x86\Debug\Forms.pdb
+C:\Users\fagne\Downloads\Movies\Forms\bin\x86\Debug\ClassLibrary.dll
+C:\Users\fagne\Downloads\Movies\Forms\bin\x86\Debug\ClassLibrary.pdb
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.csproj.AssemblyReference.cache
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.Form1.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.Form2.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.Properties.Resources.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.TextBoxBorder.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.UserControl1.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.csproj.GenerateResource.cache
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.exe
+C:\Users\fagne\Downloads\Movies\Forms\obj\x86\Debug\Forms.pdb

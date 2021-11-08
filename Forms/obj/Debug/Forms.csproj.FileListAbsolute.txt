@@ -1,0 +1,11 @@
+C:\Users\fagne\Downloads\Movies\Forms\bin\Debug\Forms.exe.config
+C:\Users\fagne\Downloads\Movies\Forms\bin\Debug\Forms.exe
+C:\Users\fagne\Downloads\Movies\Forms\bin\Debug\Forms.pdb
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.Form1.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.Form2.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.Properties.Resources.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.TextBoxBorder.resources
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.csproj.GenerateResource.cache
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.csproj.CoreCompileInputs.cache
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.exe
+C:\Users\fagne\Downloads\Movies\Forms\obj\Debug\Forms.pdb
