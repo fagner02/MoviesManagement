@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace MovieClass {
     public class Movie {
+        public bool toAdd;
         public string title;
         public string genre;
         public int rating;
@@ -11,7 +12,7 @@ namespace MovieClass {
         public List<string> actors = new List<string>();
         public List<string> characters = new List<string>();
         public string plot;
-        public TimeSpan duration = new TimeSpan(1,1, 0);
+        public TimeSpan duration = new TimeSpan(0,0, 0);
 
         public void print(){
             Console.WriteLine("Title: " + title);
@@ -41,10 +42,10 @@ namespace MovieClass {
         }
 
         public override string ToString() {
-            string temp = $"Title: {title}\r\nGenre: {genre}\r\nDirector: {director}\r\nRelease Date: {releaseDate.ToShortDateString()}\r\nDuration: {duration.Hours}h {duration.TotalMinutes}min\r\nRating: {rating}\r\n{plot}\r\nActors: ";
-            foreach(string actor in actors) {
+            string temp = $"Title: {this.title}\r\nGenre: {this.genre}\r\nDirector: {this.director}\r\nRelease Date: {this.releaseDate.ToShortDateString()}\r\nDuration: {this.duration.Hours}h {this.duration.TotalMinutes}min\r\nRating: {this.rating}\r\nPlot: {this.plot}\r\nActors: ";
+            foreach(string actor in this.actors) {
                 temp += "   "+actor+"\r\n";
-            }
+            } 
             return temp;
         }
     }

@@ -25,9 +25,9 @@ namespace Forms {
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
+            this.listMovie = new System.Windows.Forms.Button();
+            this.remove = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -36,57 +36,58 @@ namespace Forms {
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // add
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(66, 91);
-            this.button1.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.addMovie);
+            this.add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.add.FlatAppearance.BorderSize = 0;
+            this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.add.ForeColor = System.Drawing.Color.White;
+            this.add.Location = new System.Drawing.Point(66, 91);
+            this.add.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 0;
+            this.add.Text = "Add";
+            this.add.UseVisualStyleBackColor = false;
+            this.add.Click += new System.EventHandler(this.addMovie);
             // 
-            // button2
+            // listMovie
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.listMovie.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(68, 143);
-            this.button2.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 26);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
+            this.listMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.listMovie.FlatAppearance.BorderSize = 0;
+            this.listMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listMovie.ForeColor = System.Drawing.Color.White;
+            this.listMovie.Location = new System.Drawing.Point(68, 143);
+            this.listMovie.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
+            this.listMovie.Name = "listMovie";
+            this.listMovie.Size = new System.Drawing.Size(75, 26);
+            this.listMovie.TabIndex = 1;
+            this.listMovie.Text = "List Movies";
+            this.listMovie.UseVisualStyleBackColor = false;
+            this.listMovie.Click += new System.EventHandler(this.listMovies);
             // 
-            // button3
+            // remove
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(66, 196);
-            this.button3.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = false;
+            this.remove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(30)))), ((int)(((byte)(40)))));
+            this.remove.FlatAppearance.BorderSize = 0;
+            this.remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remove.ForeColor = System.Drawing.Color.White;
+            this.remove.Location = new System.Drawing.Point(66, 196);
+            this.remove.Margin = new System.Windows.Forms.Padding(60, 10, 0, 0);
+            this.remove.Name = "remove";
+            this.remove.Size = new System.Drawing.Size(75, 23);
+            this.remove.TabIndex = 2;
+            this.remove.Text = "Remove";
+            this.remove.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(10)))), ((int)(((byte)(20)))));
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.add);
+            this.panel1.Controls.Add(this.listMovie);
+            this.panel1.Controls.Add(this.remove);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(202, 349);
@@ -152,10 +153,10 @@ namespace Forms {
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button add;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button listMovie;
+        private System.Windows.Forms.Button remove;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel2;
         private TextBoxBorder textBoxBorder1;

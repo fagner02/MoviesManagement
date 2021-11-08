@@ -3,3 +3,4 @@ C:\Users\fagne\Downloads\Movies\ClassLibrary\bin\x86\Debug\ClassLibrary.pdb
 C:\Users\fagne\Downloads\Movies\ClassLibrary\obj\x86\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\fagne\Downloads\Movies\ClassLibrary\obj\x86\Debug\ClassLibrary.dll
 C:\Users\fagne\Downloads\Movies\ClassLibrary\obj\x86\Debug\ClassLibrary.pdb
+C:\Users\fagne\Downloads\Movies\ClassLibrary\obj\x86\Debug\ClassLibrary.csproj.AssemblyReference.cache
